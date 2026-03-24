@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Customization Portal | The Midsummer Rain</title>
+    <meta name="description" content="Customize your luxury villa with premium flooring, fittings, and finishes. Choose from 4 tailored packages or create your own combination.">
+    <link rel="stylesheet" href="customization-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">THE MIDSUMMER RAIN</span>
+                <span class="logo-subtitle">Villa Customization Portal</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#packages" class="nav-link">Packages</a></li>
+                <li><a href="#floors" class="nav-link">By Floor</a></li>
+                <li><a href="#visualizer" class="nav-link">Visualizer</a></li>
+                <li><a href="#materials" class="nav-link">Materials</a></li>
+                <li><a href="#contact" class="nav-link cta-btn">Request Quote</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-main">Design Your</span>
+                <span class="hero-title-sub">Dream Villa</span>
+            </h1>
+            <p class="hero-description">Choose from curated packages or customize every detail - from Italian marble flooring to premium sanitary ware. Your vision, perfected.</p>
+            <div class="hero-cta">
+                <a href="#packages" class="btn btn-primary">Explore Packages</a>
+                <a href="#visualizer" class="btn btn-secondary">Start Customizing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Overview -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Your Choice</span>
+                <h2 class="section-title">Customization Packages</h2>
+                <p class="section-description">Four thoughtfully curated packages designed to match different preferences and budgets</p>
+            </div>
+
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card" data-package="1">
+                    <div class="package-header">
+                        <h3>Common Areas</h3>
+                        <div class="package-price">
+                            <span class="price-amount">₹3.8L</span>
+                            <span class="price-label">+ GST</span>
+                        </div>
+                    </div>
+                    <div class="package-coverage">
+                        <h4>Coverage</h4>
+                        <ul>
+                            <li>1st Floor Family Lounge & Corridor</li>
+                            <li>2nd Floor Corridor</li>
+                        </ul>
+                    </div>
+                    <div class="package-features">
+                        <h4>Upgrades Include</h4>
+                        <ul>
+                            <li>Italian Botticino Marble flooring</li>
+                            <li>Premium edge finishing</li>
+                            <li>Professional installation</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline">View Details</button>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card package-popular" data-package="2">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-header">
+                        <h3>Master + Common</h3>
+                        <div class="package-price">
+                            <span class="price-amount">₹6.7L</span>
+                            <span class="price-label">+ GST</span>
+                        </div>
+                    </div>
+                    <div class="package-coverage">
+                        <h4>Coverage</h4>
+                        <ul>
+                            <li>Master Bedroom</li>
+                            <li>1st Floor Family Lounge & Corridor</li>
+                            <li>2nd Floor Corridor</li>
+                        </ul>
+                    </div>
+                    <div class="package-features">
+                        <h4>Upgrades Include</h4>
+                        <ul>
+                            <li>Italian Botticino Marble flooring</li>
+                            <li>Premium edge finishing</li>
+                            <li>Professional installation</li>
+                            <li>Bedroom feature wall option</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary">View Details</button>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card" data-package="3">
+                    <div class="package-header">
+                        <h3>Complete Living</h3>
+                        <div class="package-price">
+                            <span class="price-amount">₹19.8L</span>
+                            <span class="price-label">+ GST</span>
+                        </div>
+                    </div>
+                    <div class="package-coverage">
+                        <h4>Coverage</h4>
+                        <ul>
+                            <li>All Living Areas</li>
+                            <li>Ground, First & Second Floors</li>
+                            <li>All Bedrooms</li>
+                            <li>Family Lounges</li>
+                        </ul>
+                    </div>
+                    <div class="package-features">
+                        <h4>Upgrades Include</h4>
+                        <ul>
+                            <li>Premium Italian marble throughout</li>
+                            <li>Complete flooring transformation</li>
+                            <li>Professional edge finishing</li>
+                            <li>Lifetime polish warranty</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline">View Details</button>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="package-card" data-package="4">
+                    <div class="package-header">
+                        <h3>Ground Level</h3>
+                        <div class="package-price">
+                            <span class="price-amount">₹4.5L</span>
+                            <span class="price-label">+ GST</span>
+                        </div>
+                    </div>
+                    <div class="package-coverage">
+                        <h4>Coverage</h4>
+                        <ul>
+                            <li>Ground Floor Kitchen</li>
+                            <li>Bedroom 1</li>
+                            <li>Lift Cladding (All Floors)</li>
+                        </ul>
+                    </div>
+                    <div class="package-features">
+                        <h4>Upgrades Include</h4>
+                        <ul>
+                            <li>Italian Botticino Marble</li>
+                            <li>Premium lift interior cladding</li>
+                            <li>Professional installation</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-outline">View Details</button>
+                </div>
+            </div>
+
+            <div class="package-note">
+                <p><strong>Premium Options:</strong> Toilets with Powder Room upgrade available at ₹21.5L | Complete (All Living + All Toilets) at ₹41.3L</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor-by-Floor Comparison -->
+    <section id="floors" class="floor-comparison">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Visual Guide</span>
+                <h2 class="section-title">Standard vs Custom - By Floor</h2>
+                <p class="section-description">See exactly how premium upgrades transform each level of your villa</p>
+            </div>
+
+            <!-- Ground Floor -->
+            <div class="floor-section">
+                <div class="floor-header">
+                    <h3>Ground Floor</h3>
+                    <p>Bedroom 1 & Kitchen</p>
+                </div>
+                <div class="comparison-grid">
+                    <div class="comparison-side">
+                        <div class="comparison-label">
+                            <span class="label-badge standard">Standard</span>
+                            <h4>Botticino Classico Light Tiles</h4>
+                        </div>
+                        <div class="comparison-images">
+                            <div class="floor-plan-img">
+                                <img src="images/ground-floor-standard.png" alt="Ground floor standard layout">
+                            </div>
+                            <div class="material-sample">
+                                <img src="images/tile-botticino-light.png" alt="Botticino Classico Light Tile">
+                                <span>Included in base price</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-divider">
+                        <span>VS</span>
+                    </div>
+                    <div class="comparison-side">
+                        <div class="comparison-label">
+                            <span class="label-badge custom">Custom Upgrade</span>
+                            <h4>Italian Botticino Marble</h4>
+                        </div>
+                        <div class="comparison-images">
+                            <div class="floor-plan-img">
+                                <img src="images/ground-floor-custom.png" alt="Ground floor custom layout">
+                            </div>
+                            <div class="material-sample">
+                                <img src="images/marble-botticino-beige.png" alt="Italian Botticino Marble">
+                                <span>Premium upgrade</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- First Floor -->
+            <div class="floor-section">
+                <div class="floor-header">
+                    <h3>First Floor</h3>
+                    <p>Bedroom 2, Master Bedroom & Family Lounge</p>
+                </div>
+                <div class="comparison-grid">
+                    <div class="comparison-side">
+                        <div class="comparison-label">
+                            <span class="label-badge standard">Standard</span>
+                            <h4>Mixed: Tiles & Laminate</h4>
+                        </div>
+                        <div class="comparison-images">
+                            <div class="floor-plan-img">
+                                <img src="images/first-floor-standard.png" alt="First floor standard layout">
+                            </div>
+                            <div class="material-grid">
+                                <div class="material-sample small">
+                                    <img src="images/tile-botticino-light.png" alt="Tiles">
+                                    <span>Bedrooms</span>
+                                </div>
+                                <div class="material-sample small">
+                                    <img src="images/laminate-wood.png" alt="Laminate">
+                                    <span>Master BR</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-divider">
+                        <span>VS</span>
+                    </div>
+                    <div class="comparison-side">
+                        <div class="comparison-label">
+                            <span class="label-badge custom">Custom Upgrade</span>
+                            <h4>Full Italian Marble</h4>
+                        </div>
+                        <div class="comparison-images">
+                            <div class="floor-plan-img">
+                                <img src="images/first-floor-custom.png" alt="First floor custom layout">
+                            </div>
+                            <div class="material-sample">
+                                <img src="images/marble-botticino-beige.png" alt="Italian Botticino Marble">
+                                <span>Seamless elegance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Floor -->
+            <div class="floor-section">
+                <div class="floor-header">
+                    <h3>Second Floor</h3>
+                    <p>Bedroom 3 & Home Theatre</p>
+                </div>
+                <div class="comparison-grid">
+                    <div class="comparison-side">
+                        <div class="comparison-label">
+                            <span class="label-badge standard">Standard</span>
+                            <h4>Tiles & Laminate</h4>
+                        </div>
+                        <div class="comparison-images">
+                            <div class="floor-plan-img">
+                                <img src="images/second-floor-standard.png" alt="Second floor standard layout">
+                            </div>
+                            <div class="material-grid">
+                                <div class="material-sample small">
+                                    <img src="images/tile-botticino-light.png" alt="Tiles">
+                                    <span>Bedroom 3</span>
+                                </div>
+                                <div class="material-sample small">
+                                    <img src="images/laminate-wood.png" alt="Laminate">
+                                    <span>Theatre</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comparison-divider">
+                        <span>VS</span>
+                    </div>
+                    <div class="comparison-side">
+                        <div class="comparison-label">
+                            <span class="label-badge custom">Custom Upgrade</span>
+                            <h4>Premium Marble</h4>
+                        </div>
+                        <div class="comparison-images">
+                            <div class="floor-plan-img">
+                                <img src="images/second-floor-custom.png" alt="Second floor custom layout">
+                            </div>
+                            <div class="material-sample">
+                                <img src="images/marble-botticino-beige.png" alt="Italian Botticino Marble">
+                                <span>Luxury finish</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Visualizer -->
+    <section id="visualizer" class="visualizer">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Try It Yourself</span>
+                <h2 class="section-title">Interactive Villa Visualizer</h2>
+                <p class="section-description">Click on different rooms to see standard vs custom finishes</p>
+            </div>
+
+            <div class="visualizer-container">
+                <div class="visualizer-controls">
+                    <button class="view-toggle active" data-view="standard">Standard</button>
+                    <button class="view-toggle" data-view="custom">Custom</button>
+                </div>
+                
+                <div class="visualizer-display">
+                    <div class="floor-selector">
+                        <button class="floor-btn active" data-floor="ground">Ground Floor</button>
+                        <button class="floor-btn" data-floor="first">First Floor</button>
+                        <button class="floor-btn" data-floor="second">Second Floor</button>
+                    </div>
+                    
+                    <div class="visualizer-image-container">
+                        <img id="visualizer-main" src="images/ground-floor-standard.png" alt="Villa floor plan">
+                        <div class="room-hotspots" id="room-hotspots">
+                            <!-- Hotspots will be dynamically added -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visualizer-info" id="visualizer-info">
+                    <h4>Select a room to see details</h4>
+                    <p>Click on any room in the floor plan to view standard and custom finishing options</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Library -->
+    <section id="materials" class="materials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Premium Selection</span>
+                <h2 class="section-title">Material Library</h2>
+                <p class="section-description">Explore our curated collection of premium finishes</p>
+            </div>
+
+            <div class="materials-tabs">
+                <button class="material-tab active" data-category="flooring">Flooring</button>
+                <button class="material-tab" data-category="walls">Walls & Tiles</button>
+                <button class="material-tab" data-category="sanitary">Sanitary Ware</button>
+                <button class="material-tab" data-category="fittings">CP Fittings</button>
+            </div>
+
+            <div class="materials-grid" id="materials-grid">
+                <!-- Flooring Materials -->
+                <div class="material-card" data-category="flooring">
+                    <div class="material-image">
+                        <img src="images/tile-botticino-light.png" alt="Botticino Classico Light">
+                    </div>
+                    <div class="material-info">
+                        <h4>Botticino Classico Light</h4>
+                        <span class="material-type">Standard Tiles</span>
+                        <p>600x600mm vitrified tiles with polished finish</p>
+                        <span class="material-badge">Included</span>
+                    </div>
+                </div>
+
+                <div class="material-card" data-category="flooring">
+                    <div class="material-image">
+                        <img src="images/marble-botticino-beige.png" alt="Italian Botticino Marble">
+                    </div>
+                    <div class="material-info">
+                        <h4>Italian Botticino Marble</h4>
+                        <span class="material-type">Premium Upgrade</span>
+                        <p>Imported natural marble with elegant veining</p>
+                        <span class="material-badge premium">Premium</span>
+                    </div>
+                </div>
+
+                <div class="material-card" data-category="flooring">
+                    <div class="material-image">
+                        <img src="images/laminate-wood.png" alt="Laminated Wood Flooring">
+                    </div>
+                    <div class="material-info">
+                        <h4>Laminated Wood Flooring</h4>
+                        <span class="material-type">Standard (Master BR)</span>
+                        <p>High-quality AC4 rated laminate</p>
+                        <span class="material-badge">Included</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Customize Your Villa?</h2>
+                <p>Schedule a consultation with our design team to explore all customization possibilities</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large">Request Detailed Quote</a>
+                    <a href="#" class="btn btn-secondary btn-large">Schedule Site Visit</a>
+                </div>
+                <div class="cta-contact">
+                    <p>Call us: <strong>+91 XXXXX XXXXX</strong> | Email: <strong>customize@midsummerrain.com</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>THE MIDSUMMER RAIN</h3>
+                    <p>Luxury lakeside villas by Capstone Life</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#floors">Floor Plans</a></li>
+                        <li><a href="#materials">Materials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">RERA Information</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Midsummer Rain by Capstone Life. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="customization-script.js"></script>
+</body>
+</html>
